@@ -11,12 +11,25 @@ A browser-based audio and video file converter that runs entirely client-side us
 
 ## Development
 
-Project is currently in initial setup phase.
+```bash
+npm install
+npm run dev     # Start development server
+npm run build   # Build for production
+```
 
 ## Tech Stack
 
-- FFMPEG.wasm for media processing
+- [Vite](https://vitejs.dev/) - Build tool and dev server
+- [FFmpeg.wasm](https://ffmpegwasm.netlify.app/) - Client-side media processing
+- Vanilla JavaScript, HTML, and CSS
+
+## Credits
+
+This project uses [FFmpeg.wasm](https://github.com/ffmpegwasm/ffmpeg.wasm), which is built on top of [FFmpeg](https://ffmpeg.org/).
+
+- FFmpeg.wasm JavaScript wrapper - [MIT License](https://github.com/ffmpegwasm/ffmpeg.wasm/blob/main/LICENSE)
+- FFmpeg core (WebAssembly) - [LGPL 2.1+](https://www.ffmpeg.org/legal.html)
 
 ## License
 
-TBD
+MIT

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>riys-converter - Audio Converter</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>riys-converter</h1>
+        <p class="subtitle">Convert audio files in your browser</p>
+
+        <div class="converter-box">
+            <div class="file-input-area" id="dropArea">
+                <p>Click to select an audio file or drag and drop</p>
+                <input type="file" id="fileInput" accept="audio/*">
+            </div>
+
+            <div class="file-info" id="fileInfo">
+                <strong>Selected file:</strong> <span id="fileName"></span>
+            </div>
+
+            <div class="format-selector">
+                <label for="outputFormat">Output Format:</label>
+                <select id="outputFormat">
+                    <option value="mp3">MP3</option>
+                    <option value="wav">WAV</option>
+                    <option value="ogg">OGG</option>
+                    <option value="m4a">M4A</option>
+                    <option value="flac">FLAC</option>
+                    <option value="aac">AAC</option>
+                </select>
+            </div>
+
+            <button id="convertBtn" disabled>Convert</button>
+
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <div class="status" id="status"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/converter.js"></script>
+</body>
+</html>

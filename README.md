@@ -16,7 +16,6 @@ Project is currently in initial setup phase.
 ## Tech Stack
 
 - FFMPEG.wasm for media processing
-- Browser-based (no backend required)
 
 ## License
 

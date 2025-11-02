@@ -1,0 +1,31 @@
+{
+  "name": "riys-converter",
+  "version": "1.0.0",
+  "description": "A browser-based audio and video file converter that runs entirely client-side using FFMPEG.wasm. No server required - all processing happens in your browser using your local resources.",
+  "main": "coi-serviceworker.min.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masonwilde/riys-converter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/masonwilde/riys-converter/issues"
+  },
+  "homepage": "https://github.com/masonwilde/riys-converter#readme",
+  "devDependencies": {
+    "vite": "^7.1.12"
+  },
+  "dependencies": {
+    "@ffmpeg/core-mt": "^0.12.10",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2"
+  }
+}
